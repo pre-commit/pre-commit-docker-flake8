@@ -33,8 +33,8 @@ Lastly, the metadata in hooks.yaml hooks this up:
     language: docker
 ```
 
-Here `flake8` is the executable inside the repository and we tell
-`pre-commit` that the language is `docker`.
+Here `flake8` is the executable inside the container and we tell `pre-commit`
+that the language is `docker`.
 
 
 ## How would I use this repository with pre-commit?
