@@ -8,5 +8,3 @@ RUN apt-get update && \
 
 RUN virtualenv /venv -ppython3 && /venv/bin/pip install flake8
 ENV PATH=/venv/bin:$PATH
-
-WORKDIR /src

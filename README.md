@@ -11,17 +11,12 @@ executable.
 
 ## How does this work?
 
-A few key lines in the `Dockerfile` make this work:
-
-```dockerfile
-WORKDIR /src
-```
-
 `pre-commit` by convention mounts the user's code at `/src` inside the
 container.  The executable is fed relative path filename arguments.  The hook
 may make changes to the files as the source is mounted read-only and the
 executables are run as the user
 
+A few key lines in the `Dockerfile` make this work:
 
 ```dockerfile
 RUN virtualenv /venv -ppython3 && /venv/bin/pip install flake8
