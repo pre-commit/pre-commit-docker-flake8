@@ -1,0 +1,6 @@
+-   id: flake8-docker-not-for-production
+    name: flake8 (via docker)
+    description: flake8, but provided by docker
+    entry: flake8
+    language: docker
+    files: \.py$
