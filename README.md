@@ -13,8 +13,8 @@ executable.
 
 `pre-commit` by convention mounts the user's code at `/src` inside the
 container.  The executable is fed relative path filename arguments.  The hook
-may make changes to the files as the source is mounted read-only and the
-executables are run as the user
+may make changes to the files as the source is mounted read-write and the
+executables are run as the user.
 
 A few key lines in the `Dockerfile` make this work:
 
