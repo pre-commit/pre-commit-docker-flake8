@@ -43,7 +43,7 @@ Well, you probably wouldn't (and the hook has been labeled as such) but if you
 really wanted to you could add this to your `.pre-commit-config.yaml`:
 
 ```yaml
--   repo: git://github.com/pre-commit/pre-commit-docker-flake8
+-   repo: https://github.com/pre-commit/pre-commit-docker-flake8
     sha: ''  # Fill this in with a current revision
     hooks:
     -   id: flake8-docker-not-for-production
