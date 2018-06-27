@@ -44,7 +44,7 @@ really wanted to you could add this to your `.pre-commit-config.yaml`:
 
 ```yaml
 -   repo: https://github.com/pre-commit/pre-commit-docker-flake8
-    sha: ''  # Fill this in with a current revision
+    rev: ''  # Fill this in with a current revision
     hooks:
     -   id: flake8-docker-not-for-production
 ```
